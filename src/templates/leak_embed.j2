@@ -1,0 +1,22 @@
+**:clipboard: Data types**
+{% if data %}
+{{ data | join('\n') }}
+{% else %}
+*Not specified*
+{% endif %}
+{% if volume %}
+
+**:bar_chart: Volume:** {{ volume }}
+{% endif %}
+{% if sensitive %}
+
+**:red_circle: Sensitive data:** Yes (GDPR Art. 9)
+{% endif %}
+{% if status %}
+
+**:pushpin: Status:** {{ status }}
+{% endif %}
+{% if subcontractor %}
+
+**:link: Subcontractor:** {{ subcontractor }}
+{% endif %}
